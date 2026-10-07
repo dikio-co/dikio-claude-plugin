@@ -17,8 +17,14 @@ Task: $ARGUMENTS
 The dikio tools need the user's dikio.gr account. The first time, or after a sign-out, a dikio tool fails
 with an authentication error, or `/mcp` lists dikio as needing authentication. Then tell the user to run
 `/mcp`, pick **dikio** and choose to authenticate: dikio.gr opens in their browser, they sign in and
-approve. Someone without an account creates one there first (free) and sets up a workspace, then
-approves. Their sites live in that workspace.
+approve. Someone without an account picks **Εγγραφή** (sign up, free) on that page, then chooses a role:
+**Επαγγελματίας** (a lawyer, doctor or business with their own site) or **Συνεργάτης** (a partner who
+serves professionals and sells dikio.gr). Either way they get a workspace at once and go straight back to
+approving the connection. Their sites live in that workspace.
+
+A partner works in their clients' workspaces too. On the approval page they choose which workspace Claude
+acts in (clients are marked «πελάτης»). To work on another client later, they disconnect dikio in
+`/mcp` and sign in again choosing that client.
 
 ## 1. Read the rules first
 

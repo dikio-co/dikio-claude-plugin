@@ -14,8 +14,10 @@ your listing, services, availability and appointments.
 ```
 
 There is nothing to paste. The first time Claude uses dikio.gr, run `/mcp`, pick **dikio** and sign in:
-dikio.gr opens in your browser, you sign in (or create a free account) and approve the connection for
-your workspace. Then run `/dikio:site` and describe what you want to build or change. You can disconnect
+dikio.gr opens in your browser, you sign in and approve the connection for your workspace. New to
+dikio.gr? Choose Sign up there (free) and pick your role: professional (your own site and practice) or
+partner (you serve professionals and sell dikio.gr). Partners choose which client's workspace Claude
+works in when they approve. Then run `/dikio:site` and describe what you want to build or change. You can disconnect
 at any time from https://dikio.gr/app/developer.
 
 ## What it contains
