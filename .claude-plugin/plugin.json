@@ -1,0 +1,39 @@
+{
+  "name": "dikio",
+  "version": "1.0.4",
+  "displayName": "dikio.gr",
+  "description": "Build and edit your dikio.gr website from Claude Code: pull it into a local folder, edit it, save drafts, share a preview and publish. Also manage your listing, services and appointments.",
+  "author": {
+    "name": "dikio.gr",
+    "url": "https://dikio.gr"
+  },
+  "homepage": "https://dikio.gr/app/developer",
+  "repository": "https://github.com/dikio-co/dikio-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "dikio",
+    "website",
+    "site-builder",
+    "greece",
+    "lawyers",
+    "doctors"
+  ],
+  "userConfig": {
+    "api_token": {
+      "type": "string",
+      "title": "dikio.gr API token",
+      "description": "Create one at https://dikio.gr/app/developer. It acts as you, in the workspace you create it in.",
+      "sensitive": true,
+      "required": true
+    }
+  },
+  "mcpServers": {
+    "dikio": {
+      "type": "http",
+      "url": "https://dikio.gr/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_token}"
+      }
+    }
+  }
+}
