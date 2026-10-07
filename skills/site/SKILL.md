@@ -12,6 +12,14 @@ local copy with your own file tools and save it back as one draft version. Nothi
 
 Task: $ARGUMENTS
 
+## 0. Make sure you are signed in
+
+The dikio tools need the user's dikio.gr account. The first time, or after a sign-out, a dikio tool fails
+with an authentication error, or `/mcp` lists dikio as needing authentication. Then tell the user to run
+`/mcp`, pick **dikio** and choose to authenticate: dikio.gr opens in their browser, they sign in and
+approve. Someone without an account creates one there first (free) and sets up a workspace, then
+approves. Their sites live in that workspace.
+
 ## 1. Read the rules first
 
 Call `site_guide` once per session and follow it. It is what dikio's own site agent follows: Greek first,

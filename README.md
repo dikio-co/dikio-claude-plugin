@@ -13,14 +13,16 @@ your listing, services, availability and appointments.
 /plugin install dikio@dikio
 ```
 
-Claude Code asks for your dikio.gr API token during the install. Create one at
-https://dikio.gr/app/developer; it acts as you, in the workspace you create it in, and you can revoke it
-there at any time. Then run `/dikio:site` and describe what you want to build or change.
+There is nothing to paste. The first time Claude uses dikio.gr, run `/mcp`, pick **dikio** and sign in:
+dikio.gr opens in your browser, you sign in (or create a free account) and approve the connection for
+your workspace. Then run `/dikio:site` and describe what you want to build or change. You can disconnect
+at any time from https://dikio.gr/app/developer.
 
 ## What it contains
 
-- **The dikio MCP server**: a remote server at `https://dikio.gr/api/mcp`, reached over HTTPS with your
-  token in the `Authorization` header. Claude Code keeps the token in your operating system's keychain.
+- **The dikio MCP server**: a remote server at `https://dikio.gr/api/mcp`, reached over HTTPS. You sign
+  in with OAuth (dikio.gr's own sign-in page); Claude Code keeps the resulting access, never your
+  password.
 - **The `site` skill** (`/dikio:site`): the workflow for building and editing a site.
 
 The plugin has no hooks, runs no programs on your computer and sends nothing anywhere except to
